@@ -15,8 +15,7 @@
         return !isNaN(n1) && n2 === n1 && n1.toString() === n;
     }
 	var n;
-	
-    n = prompt("hay nhap so nguyen n");
+	n = prompt("hay nhap so nguyen n");
     while(!isNaturalNumber(n)){
     n = prompt("Nhap lai so nguyen n");
 	}
@@ -24,10 +23,12 @@
 	{
 		for(var j = 1; j <= n; j++)
 		{
-			if(i==1 || j==1 || i==n || j==n)
-			document.write('*');
-			else 
-			document.write('_');
+			if(i==1 || j==1 || i==n || j==n){
+				document.write('*');
+			}
+			else{ 
+				document.write('_');
+			}
 		}
 		document.write('<br/>');
 	}
